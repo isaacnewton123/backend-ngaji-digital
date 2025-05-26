@@ -9,7 +9,7 @@ const fs = require('fs');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors({
@@ -86,7 +86,7 @@ app.post('/api/chat', async (req, res) => {
     Anda HARUS SELALU menjawab dalam Bahasa Indonesia yang baik dan benar.
     Anda TIDAK boleh menggunakan informasi di luar sumber ini. Jika Anda tidak dapat menjawab berdasarkan sumber ini, katakan saja.
     
-    ${isFirstMessage ? 'PENTING: Karena ini adalah pesan pertama dari pengguna, SELALU mulai respons Anda dengan "اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ" diikuti dengan perkenalan singkat sebelum menjawab pertanyaan.' : ''}
+    ${isFirstMessage ? 'PENTING: Karena ini adalah pesan pertama dari pengguna, SELALU mulai respons Anda dengan "اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ" diikuti dengan perkenalan singkat sebelum menjawab pertanyaan.' : ''}
     
     SUMBER PENGETAHUAN:
     ${kitabContent}
